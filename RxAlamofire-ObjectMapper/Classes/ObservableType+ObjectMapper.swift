@@ -5,7 +5,6 @@
 //  Created by Arnaud Dorgans on 12/12/2017.
 //
 
-import UIKit
 import RxSwift
 import RxAlamofire
 import ObjectMapper
