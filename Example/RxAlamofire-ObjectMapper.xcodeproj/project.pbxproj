@@ -12,15 +12,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07BF96A154BECA1DE01164AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		07BF96A154BECA1DE01164AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2DE53C2569EE1E9F561A1541 /* Pods-RxAlamofire-ObjectMapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAlamofire-ObjectMapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAlamofire-ObjectMapper_Tests/Pods-RxAlamofire-ObjectMapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		449C156AC2B37BC93B6E93BD /* RxAlamofire-ObjectMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "RxAlamofire-ObjectMapper.podspec"; path = "../RxAlamofire-ObjectMapper.podspec"; sourceTree = "<group>"; };
 		467D05FCCBC7C75F043EEDAC /* Pods_RxAlamofire_ObjectMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAlamofire_ObjectMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* RxAlamofire-ObjectMapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxAlamofire-ObjectMapper_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A360FAA70A26D64DADD23BC4 /* Pods-RxAlamofire-ObjectMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAlamofire-ObjectMapper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAlamofire-ObjectMapper_Tests/Pods-RxAlamofire-ObjectMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F539557395A53B945DBF77C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D461320B1FDFF311002B41BF /* RxAlamofire+ObjectMapper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "RxAlamofire+ObjectMapper.podspec"; path = "../RxAlamofire+ObjectMapper.podspec"; sourceTree = "<group>"; };
+		F539557395A53B945DBF77C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				449C156AC2B37BC93B6E93BD /* RxAlamofire-ObjectMapper.podspec */,
+				D461320B1FDFF311002B41BF /* RxAlamofire+ObjectMapper.podspec */,
 				F539557395A53B945DBF77C7 /* README.md */,
 				07BF96A154BECA1DE01164AB /* LICENSE */,
 			);
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -178,11 +174,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofire-ObjectMapper_Tests/Pods-RxAlamofire-ObjectMapper_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire-ObjectMapper/RxAlamofire_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire+ObjectMapper/RxAlamofire_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

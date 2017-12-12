@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.6.0)
+  - ObjectMapper (3.1.0)
+  - RxAlamofire (4.0.0):
+    - RxAlamofire/Core (= 4.0.0)
+  - RxAlamofire+ObjectMapper (0.1.0):
+    - ObjectMapper (~> 3.0)
+    - RxAlamofire (~> 4.0)
+  - RxAlamofire/Core (4.0.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+
+DEPENDENCIES:
+  - RxAlamofire+ObjectMapper (from `../`)
+
+EXTERNAL SOURCES:
+  RxAlamofire+ObjectMapper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
+  RxAlamofire+ObjectMapper: 224d492fca87e9444e7b45a89800ab120d0df72d
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+
+PODFILE CHECKSUM: 7a137caecceb1868b27dd87adf755155e45812b8
+
+COCOAPODS: 1.4.0.beta.2
