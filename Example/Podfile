@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RxAlamofire-ObjectMapper_Tests' do
+  pod 'RxAlamofire-ObjectMapper', :path => '../'
+  
+  
+end
