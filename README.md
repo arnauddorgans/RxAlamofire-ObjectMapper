@@ -24,7 +24,7 @@ pod 'RxAlamofire-ObjectMapper'
 
 #### Map Object
 ```swift
-func responseMappable<T: Mappable>(`as` type: T.Type? = nil, to object: T? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<T>
+// func responseMappable<T: Mappable>(`as` type: T.Type? = nil, to object: T? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<T>
 
 RxAlamofire.request(method, url, parameters: parameters)
     .responseMappable(as: User.self) // Observable<User>
@@ -38,7 +38,7 @@ requestJSON(method, url)
 
 #### Map Array
 ```swift
-func responseMappableArray<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[T]>
+// func responseMappableArray<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[T]>
 
 RxAlamofire.request(method, url, parameters: parameters)
     .responseMappableArray(as: User.self, keyPath: "followers") // Observable<[User]>
@@ -52,7 +52,7 @@ requestJSON(method, url)
 
 #### Map Dictionary
 ```swift
-func responseMappableDictionary<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[String:T]>
+// func responseMappableDictionary<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[String:T]>
 
 RxAlamofire.request(method, url, parameters: parameters)
     .responseMappableDictionary(as: User.self, keyPath: "followers") // Observable<[String: User]>
@@ -66,7 +66,7 @@ requestJSON(method, url)
 
 #### Map Dictionary Of Arrays
 ```swift
-func responseMappableDictionaryOfArrays<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[String:[T]]>
+// func responseMappableDictionaryOfArrays<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[String:[T]]>
 
 RxAlamofire.request(method, url, parameters: parameters)
     .responseMappableDictionaryOfArrays(as: Place.self, keyPath: "places") // Observable<[String:[Place]]>
@@ -80,7 +80,7 @@ requestJSON(method, url)
 
 #### Map Array Of Arrays
 ```swift
-func responseMappableArrayOfArrays<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[[T]]>
+// func responseMappableArrayOfArrays<T: Mappable>(`as` type: T.Type? = nil, keyPath: String? = nil, context: MapContext? = nil) -> Observable<[[T]]>
 
 RxAlamofire.request(method, url, parameters: parameters)
     .responseMappableArrayOfArrays(as: User.self, keyPath: "users") // Observable<[[User]]>
