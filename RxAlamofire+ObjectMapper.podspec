@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxAlamofire+ObjectMapper'
-  s.version          = '0.1.3'
+  s.version          = '0.1.3.1'
   s.summary          = 'Reactive ObjectMapper extensions for RxAlamofire'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Reactive ObjectMapper extensions for RxAlamofire.
                        DESC
 
-  s.homepage         = 'https://github.com/Arnoymous/RxAlamofire-ObjectMapper'
+  s.homepage         = 'https://github.com/arnauddorgans/RxAlamofire-ObjectMapper'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Arnoymous' => 'arnaud.dorgans@gmail.com' }
-  s.source           = { :git => 'https://github.com/Arnoymous/RxAlamofire-ObjectMapper.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/arnauddorgans/RxAlamofire-ObjectMapper.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/arnauddorgans'
 
   s.ios.deployment_target = '8.0'
@@ -41,7 +41,7 @@ Reactive ObjectMapper extensions for RxAlamofire.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'RxAlamofire', '~> 4.0'
-  s.dependency 'ObjectMapper', '~> 3.0'
+  s.dependency 'RxAlamofire', '~> 4'
+  s.dependency 'ObjectMapper', '~> 3'
 
 end
